@@ -1,0 +1,11 @@
+scenario_id,description,it_capacity_mw,it_load_fraction,heat_conversion_fraction,collection_fraction,heat_exchanger_effectiveness,coolant_outlet_temp_c,greenhouse_supply_temp_c,direct_hx_approach_c,distribution_loss_fraction,hp_carnot_efficiency,hp_source_approach_c,hp_sink_approach_c,hp_minimum_cop,hp_maximum_cop,outdoor_temp_c,greenhouse_indoor_temp_c,envelope_u_value_w_m2k,envelope_area_to_floor_area,air_changes_per_hour,greenhouse_mean_height_m,air_density_kg_m3,air_specific_heat_j_kgk,design_margin_fraction
+baseline_1mw,Baseline assumptions at 1 MW IT capacity,1,0.80,1.00,0.75,0.75,35,40,5,0.08,0.45,5,5,1.5,6.0,0,18,3.98,1.50,0.75,4.0,1.204,1006,0.10
+baseline_10mw,Baseline assumptions at 10 MW IT capacity,10,0.80,1.00,0.75,0.75,35,40,5,0.08,0.45,5,5,1.5,6.0,0,18,3.98,1.50,0.75,4.0,1.204,1006,0.10
+baseline_50mw,Baseline assumptions at 50 MW IT capacity,50,0.80,1.00,0.75,0.75,35,40,5,0.08,0.45,5,5,1.5,6.0,0,18,3.98,1.50,0.75,4.0,1.204,1006,0.10
+coolant_25c_10mw,Lower-temperature source requiring a heat pump,10,0.80,1.00,0.75,0.75,25,40,5,0.08,0.45,5,5,1.5,6.0,0,18,3.98,1.50,0.75,4.0,1.204,1006,0.10
+coolant_45c_10mw,Threshold direct-exchange source,10,0.80,1.00,0.75,0.75,45,40,5,0.08,0.45,5,5,1.5,6.0,0,18,3.98,1.50,0.75,4.0,1.204,1006,0.10
+coolant_55c_10mw,Higher-temperature source using direct exchange,10,0.80,1.00,0.75,0.75,55,40,5,0.08,0.45,5,5,1.5,6.0,0,18,3.98,1.50,0.75,4.0,1.204,1006,0.10
+cold_weather_10mw,Baseline system at minus 10 C outdoors,10,0.80,1.00,0.75,0.75,35,40,5,0.08,0.45,5,5,1.5,6.0,-10,18,3.98,1.50,0.75,4.0,1.204,1006,0.10
+mild_weather_10mw,Baseline system at 10 C outdoors,10,0.80,1.00,0.75,0.75,35,40,5,0.08,0.45,5,5,1.5,6.0,10,18,3.98,1.50,0.75,4.0,1.204,1006,0.10
+stress_case_10mw,Low load and collection with a leaky envelope in cold weather,10,0.50,1.00,0.40,0.60,25,40,5,0.15,0.40,5,5,1.5,5.0,-10,18,6.50,1.80,2.00,4.0,1.204,1006,0.10
+favorable_case_10mw,High load and capture with an improved envelope,10,0.95,1.00,0.90,0.85,55,40,5,0.04,0.50,5,5,1.5,7.0,0,18,2.80,1.50,0.50,4.0,1.204,1006,0.10

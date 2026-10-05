@@ -1,0 +1,8 @@
+flowchart LR
+    DCS[Data Center Sensors<br/>supply/return temperature<br/>flow rate] --> CTRL[Control Software]
+    GS[Greenhouse Sensors<br/>air temperature<br/>humidity<br/>root-zone temperature<br/>CO2 when relevant] --> CTRL
+    W[Weather Data] --> CTRL
+    CTRL --> HP[Heat Pump]
+    CTRL --> P[Pumps / Valves]
+    CTRL --> ST[Thermal Storage]
+    CTRL --> GH[Greenhouse Setpoints]

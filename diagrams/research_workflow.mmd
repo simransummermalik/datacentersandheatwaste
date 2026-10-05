@@ -1,0 +1,9 @@
+flowchart TD
+    Q[Can recovered data-center heat support greenhouse demand?]
+    Q --> L[Literature + Engineering Parameters]
+    L --> M[Thermal Model]
+    M --> S[Scenario + Sensitivity Analysis]
+    S --> F[Feasible Conditions]
+    S --> N[Failure / Impractical Conditions]
+    F --> NEXT[Prototype / Sensor-Control Study]
+    N --> NEXT

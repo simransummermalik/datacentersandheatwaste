@@ -1,0 +1,4 @@
+it_capacity_mw,ideal_nameplate_heat_mw,nameplate_theoretical_heat_mw,operating_it_power_mw,post_hx_source_heat_mw,delivered_heat_mw,supported_area_m2
+1.0,1.0,1.0,0.8,0.45,0.4968,3595.019179079976
+10.0,10.0,10.0,8.0,4.5,4.968,35950.191790799756
+50.0,50.0,50.0,40.0,22.5,24.84,179750.95895399878

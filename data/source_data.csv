@@ -1,0 +1,30 @@
+parameter,value,unit,minimum,maximum,basis,source_id,notes
+it_capacity_mw,10,MW,1,50,scenario assumption,ASSUMPTION,"Baseline nameplate IT capacity; 1, 10, and 50 MW are evaluated"
+it_load_fraction,0.80,fraction,0.40,1.00,scenario assumption,ASSUMPTION,Instantaneous IT draw divided by nameplate IT capacity
+heat_conversion_fraction,1.00,fraction,0.97,1.00,energy-balance approximation,ASSUMPTION,Nearly all IT electricity ultimately leaves the equipment as heat; range tests bookkeeping and boundary uncertainty
+collection_fraction,0.75,fraction,0.35,0.95,scenario assumption informed by demonstrated liquid capture,NREL_ESIF_2014,Fraction of IT heat intercepted by the selected recovery loop; this is not a published fleet average
+heat_exchanger_effectiveness,0.75,fraction,0.50,0.90,scenario assumption informed by case-study range,LU_2024_HX,Transferred heat divided by heat entering the recovery exchanger; do not combine with a source that already reports plant-wide recovered heat
+coolant_outlet_temp_c,35,degC,25,55,scenario range anchored by measured/reviewed systems,NREL_WASTE_HEAT_2022,Temperature of the recoverable source stream entering the reuse system
+greenhouse_supply_temp_c,40,degC,30,50,scenario assumption,ASSUMPTION,Low-temperature hydronic supply target; an actual emitter must be selected and sized
+direct_hx_approach_c,5,delta_degC,3,10,scenario assumption,ASSUMPTION,Minimum source-to-load temperature difference for direct exchange
+distribution_loss_fraction,0.08,fraction,0.03,0.15,scenario assumption informed by district-heating guidance,ASSUMPTION,Heat lost between plant and greenhouse before delivery
+hp_carnot_efficiency,0.45,fraction,0.35,0.55,screening assumption informed by NREL modeling,NREL_5GDHC_2022,Fraction of ideal Carnot heating COP before COP bounds
+hp_source_approach_c,5,delta_degC,3,8,scenario assumption,ASSUMPTION,Source-fluid to evaporating-refrigerant approach
+hp_sink_approach_c,5,delta_degC,3,8,scenario assumption,ASSUMPTION,Condensing-refrigerant to greenhouse-loop approach
+hp_minimum_cop,1.5,W_heat_per_W_electric,1.3,2.0,screening bound,ASSUMPTION,Lower clamp used outside favorable temperature-lift conditions
+hp_maximum_cop,6.0,W_heat_per_W_electric,4.0,8.0,screening bound,ASSUMPTION,Upper clamp prevents a small modeled lift from producing an unrealistic COP
+outdoor_temp_c,0,degC,-10,10,scenario assumption,ASSUMPTION,Design-point outdoor temperature rather than a site weather observation
+greenhouse_indoor_temp_c,18,degC,10,24,generic crop scenario,ALABAMA_EXTENSION_CROP_TEMPS,There is no universal setpoint; actual crop and growth stage determine the schedule
+envelope_u_value_w_m2k,3.98,W_per_m2_K,2.8,6.5,double-poly baseline; categorical covering range,USDA_VIRTUAL_GROWER_2010,Overall U-value includes surface heat transfer; replace with assembly or audit data
+envelope_area_to_floor_area,1.50,m2_per_m2,1.0,1.8,multispan geometry baseline,CORNELL_NRAES_003,Roof plus wall heat-loss area divided by growing-floor area
+air_changes_per_hour,0.75,1_per_hour,0.5,4.0,new closed double-poly baseline,CORNELL_NRAES_003,Infiltration only; deliberate ventilation is separate
+greenhouse_mean_height_m,4.0,m,3.0,5.0,scenario assumption,ASSUMPTION,Used with ACH to convert floor area to air volume
+air_density_kg_m3,1.204,kg_per_m3,1.15,1.30,engineering approximation,NASA_AIR_PROPERTIES,Actual density varies with temperature humidity pressure and elevation
+air_specific_heat_j_kgk,1006,J_per_kg_K,1000,1030,engineering approximation,ENERGYPLUS_PSYCHROMETRICS,Fixed dry-air approximation for this screening model
+design_margin_fraction,0.10,fraction,0.00,0.20,scenario assumption,ASSUMPTION,Multiplicative margin on transmission plus infiltration load
+storage_charge_efficiency,0.98,fraction,0.90,0.99,scenario assumption,ASSUMPTION,Heat retained when charging the idealized water tank
+storage_discharge_efficiency,0.98,fraction,0.90,0.99,scenario assumption,ASSUMPTION,Stored heat reaching the greenhouse load
+storage_standing_loss_per_hour,0.001,fraction_per_hour,0.0005,0.005,scenario assumption,ASSUMPTION,Fraction of current state of charge lost each hour
+storage_delta_t_c,20,delta_degC,10,30,scenario assumption,ASSUMPTION,Usable hot-to-cold temperature swing for water-volume conversion
+water_density_kg_m3,997,kg_per_m3,990,1000,engineering approximation,ASSUMPTION,Constant property used only for tank-volume screening
+water_specific_heat_kj_kgk,4.186,kJ_per_kg_K,4.18,4.22,engineering approximation,ASSUMPTION,Constant property used only for tank-volume screening

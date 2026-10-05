@@ -1,0 +1,10 @@
+flowchart LR
+    DC[Data Center IT Load] --> C[Cooling System]
+    C --> HX[Heat Exchanger]
+    HX -->|Temperature sufficient| TS[Thermal Storage]
+    HX -->|Temperature too low| HP[Heat Pump]
+    HP -->|Compressor electricity added| TS
+    TS -->|Distribution loss| LOSS((Losses))
+    TS --> GH[Greenhouse Heating]
+    GH --> RL[Return Loop]
+    RL --> HX

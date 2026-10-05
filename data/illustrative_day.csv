@@ -1,0 +1,25 @@
+hour,outdoor_temp_c,it_load_fraction,data_status
+0,-2.0,0.72,illustrative scenario assumption
+1,-2.8,0.68,illustrative scenario assumption
+2,-3.5,0.55,illustrative scenario assumption
+3,-4.2,0.45,illustrative scenario assumption
+4,-4.8,0.40,illustrative scenario assumption
+5,-5.0,0.45,illustrative scenario assumption
+6,-4.5,0.55,illustrative scenario assumption
+7,-3.5,0.65,illustrative scenario assumption
+8,-2.0,0.75,illustrative scenario assumption
+9,0.0,0.82,illustrative scenario assumption
+10,2.0,0.88,illustrative scenario assumption
+11,3.5,0.90,illustrative scenario assumption
+12,4.5,0.92,illustrative scenario assumption
+13,5.0,0.95,illustrative scenario assumption
+14,5.0,0.95,illustrative scenario assumption
+15,4.5,0.90,illustrative scenario assumption
+16,3.5,0.86,illustrative scenario assumption
+17,2.0,0.84,illustrative scenario assumption
+18,0.5,0.82,illustrative scenario assumption
+19,-0.5,0.80,illustrative scenario assumption
+20,-1.0,0.78,illustrative scenario assumption
+21,-1.2,0.76,illustrative scenario assumption
+22,-1.5,0.75,illustrative scenario assumption
+23,-1.8,0.74,illustrative scenario assumption
