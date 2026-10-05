@@ -18,10 +18,6 @@ storage—not people fed or a claimed reduction in food insecurity.
 
 - March 2026 — original concept and initial question.
 - October 2026 — public repository and expanded computational analysis.
-- Spring 2027 — while preparing an OUR application, I encountered UNC
-  Charlotte’s BRANE research and noticed a connection to the broader question
-  of computing infrastructure interacting with biological systems. This
-  repository remains an independent project.
 
 ## Boundaries
 
@@ -31,4 +27,3 @@ screen. The greenhouse load covers transmission and infiltration at a stated
 design temperature. It does not select equipment, guarantee crop yield, or
 replace a site energy audit. A synthetic one-day profile demonstrates mismatch;
 it is not a measured weather year.
-

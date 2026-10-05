@@ -47,30 +47,30 @@ The model reports potential thermal and production capacity, not “people fed.�
 
 The calculation follows the energy through explicit checkpoints:
 
-\[
+$$
 Q_{generated}=P_{IT}f_{load}f_{heat}
-\]
+$$
 
-\[
+$$
 Q_{HX}=Q_{generated}f_{collect}\epsilon_{HX}
-\]
+$$
 
 Direct exchange is allowed only when the coolant outlet is at least the
 greenhouse supply temperature plus a stated approach temperature. Otherwise,
 the model uses a bounded Carnot-fraction heat-pump screen and reports its
 electricity separately:
 
-\[
+$$
 Q_{cond}=Q_{HX}\frac{COP}{COP-1}, \qquad
 Q_{delivered}=Q_{cond}(1-L_{distribution})
-\]
+$$
 
 Greenhouse peak sensible demand is:
 
-\[
+$$
 q''=\left(Ur_A+\frac{\rho c_p ACH h}{3600}\right)
 \max(T_{set}-T_{out},0)(1+m)
-\]
+$$
 
 The supported floor area is delivered heat divided by that intensity. Solar
 gain, crop schedules, perimeter/ground loss, and deliberate ventilation are
@@ -228,19 +228,6 @@ The project is meant to show the failure conditions too: low source temperature,
 poor collection, long distribution paths, cold weather, leaky envelopes,
 unreliable heat availability, and a community context where production is not
 affordable or wanted.
-
-## Where This Could Go Next
-
-While researching this concept, I became interested in systems where computing
-infrastructure can interact with biological systems instead of existing
-separately from them. That is part of why UNC Charlotte’s BRANE research
-immediately interested me. This repository is still an independent project; it
-does not represent collaboration with Dr. Kim or the lab, and it was not built
-to imply one.
-
-The timeline matters: March 2026 was the original concept, October 2026 is the
-public repository and expanded computational analysis, and Spring 2027 is when I
-encountered BRANE while preparing an OUR application.
 
 ## Sources and limitations
 
