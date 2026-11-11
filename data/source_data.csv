@@ -28,3 +28,11 @@ storage_standing_loss_per_hour,0.001,fraction_per_hour,0.0005,0.005,scenario ass
 storage_delta_t_c,20,delta_degC,10,30,scenario assumption,ASSUMPTION,Usable hot-to-cold temperature swing for water-volume conversion
 water_density_kg_m3,997,kg_per_m3,990,1000,engineering approximation,ASSUMPTION,Constant property used only for tank-volume screening
 water_specific_heat_kj_kgk,4.186,kJ_per_kg_K,4.18,4.22,engineering approximation,ASSUMPTION,Constant property used only for tank-volume screening
+winter_greenhouse_floor_area_m2,27000,m2,10000,50000,scenario assumption,ASSUMPTION,Fixed 2.7 hectare greenhouse for hourly reliability and operating-cost analysis
+winter_storage_capacity_kwh,10532,kWh,0,50000,carryover from illustrative-day screen,ASSUMPTION,Fixed 10.532 MWh tank size from the earlier synthetic-day poster example; not optimized for this winter
+winter_energy_design_margin_fraction,0,fraction,0,0.2,scenario assumption,ASSUMPTION,Hourly energy demand omits the 10 percent design sizing margin; peak sizing elsewhere retains it
+nc_2025_commercial_electricity_usd_per_kwh,0.1022,USD_per_kWh,0.0779,0.20,2025 NC commercial annual average,EIA_ELECTRICITY_2025,Energy-only proxy rather than a tariff or demand-charge estimate
+nc_2025_commercial_gas_usd_per_mcf,12.71,USD_per_Mcf,8,20,2025 NC commercial annual average,EIA_GAS_2025,Average sale price rather than an actual greenhouse supply contract
+gas_mmbtu_per_mcf,1.037,MMBtu_per_Mcf,1.0,1.1,2025 US average heat content,EIA_GAS_CONTENT_2025,Energy conversion from volume of natural gas to fuel energy
+reference_gas_boiler_efficiency,0.85,fraction,0.80,0.94,reference scenario informed by DOE FEMP,DOE_FEMP_BOILERS,Seasonal delivered-heat efficiency assumption; no actual greenhouse boiler has been specified
+pump_electricity_per_delivered_heat_fraction,0.02,kWh_electric_per_kWh_heat,0,0.05,scenario assumption,ASSUMPTION,Greenhouse-side circulation and transfer electricity proxy applied to heat-pump thermal output used or charged

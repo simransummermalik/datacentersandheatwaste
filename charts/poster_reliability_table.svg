@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="518.4pt" height="183.6pt" viewBox="0 0 518.4 183.6" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-10T19:26:31.155601</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 183.6 
+L 518.4 183.6 
+L 518.4 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 25.29792 38.9232 
+L 493.10208 38.9232 
+" clip-path="url(#p49358b613c)" style="fill: none; stroke: #202020; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 25.29792 65.3616 
+L 493.10208 65.3616 
+" clip-path="url(#p49358b613c)" style="fill: none; stroke: #202020; stroke-width: 0.55; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 25.29792 146.43936 
+L 493.10208 146.43936 
+" clip-path="url(#p49358b613c)" style="fill: none; stroke: #202020; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Times New Roman'; text-anchor: start; fill: #202020" x="30.27456" y="24.82272" transform="rotate(-0 30.27456 24.82272)">2.7 ha greenhouse · 2,054 heating hours</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Times New Roman'; text-anchor: start; fill: #202020" x="30.27456" y="54.78624" transform="rotate(-0 30.27456 54.78624)">Compute-load case</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Times New Roman'; text-anchor: end; fill: #202020" x="348.77952" y="54.78624" transform="rotate(-0 348.77952 54.78624)">Hours covered</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Times New Roman'; text-anchor: end; fill: #202020" x="488.12544" y="54.78624" transform="rotate(-0 488.12544 54.78624)">Backup heat</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 11px; font-family: 'Times New Roman'; text-anchor: start; fill: #202020" x="30.27456" y="84.74976" transform="rotate(-0 30.27456 84.74976)">Measured shape; no tank</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 11px; font-family: 'Times New Roman'; text-anchor: end; fill: #202020" x="348.77952" y="84.74976" transform="rotate(-0 348.77952 84.74976)">94.5%</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 11px; font-family: 'Times New Roman'; text-anchor: end; fill: #202020" x="488.12544" y="84.74976" transform="rotate(-0 488.12544 84.74976)">150 MWh</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 11px; font-family: 'Times New Roman'; text-anchor: start; fill: #202020" x="30.27456" y="109.4256" transform="rotate(-0 30.27456 109.4256)">Measured shape; 10.5 MWh tank</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Times New Roman'; text-anchor: end; fill: #202020" x="348.77952" y="109.4256" transform="rotate(-0 348.77952 109.4256)">96.5%</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 11px; font-family: 'Times New Roman'; text-anchor: end; fill: #202020" x="488.12544" y="109.4256" transform="rotate(-0 488.12544 109.4256)">128 MWh</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 11px; font-family: 'Times New Roman'; text-anchor: start; fill: #202020" x="30.27456" y="134.10144" transform="rotate(-0 30.27456 134.10144)">Flat 8 MW; 10.5 MWh tank</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 11px; font-family: 'Times New Roman'; text-anchor: end; fill: #202020" x="348.77952" y="134.10144" transform="rotate(-0 348.77952 134.10144)">100.0%</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 11px; font-family: 'Times New Roman'; text-anchor: end; fill: #202020" x="488.12544" y="134.10144" transform="rotate(-0 488.12544 134.10144)">0 MWh</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman'; text-anchor: start; fill: #555555" x="30.27456" y="164.06496" transform="rotate(-0 30.27456 164.06496)">Measured shape: NLR Colorado HPC; weather: NOAA Charlotte. Hypothetical pairing.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p49358b613c">
+   <rect x="10.368" y="3.672" width="497.664" height="176.256"/>
+  </clipPath>
+ </defs>
+</svg>

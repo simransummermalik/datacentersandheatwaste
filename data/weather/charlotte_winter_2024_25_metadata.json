@@ -1,0 +1,19 @@
+{
+  "station": "NOAA 72314013881 Charlotte Douglas airport",
+  "winter_local": "2024-12-01 00:00 through 2025-03-01 00:00 America/New_York",
+  "hours": 2160,
+  "hours_with_quality_coded_observations": 2155,
+  "interpolated_hours": 5,
+  "longest_interpolated_gap_hours": 4,
+  "quality_codes_accepted": [
+    "0",
+    "1",
+    "4",
+    "5"
+  ],
+  "hourly_reduction": "mean of valid observations within each UTC hour",
+  "raw_source_sha256": {
+    "charlotte_douglas_noaa_2024.csv": "2b3b6890dd4493bf2f8b50056bd215a2683456a5d1e7225c4a405d16cc3ff6d9",
+    "charlotte_douglas_noaa_2025.csv": "adcc3944c448581f55f6f42ad6ef02508a8eb8c143184cdc0b30f170e18467d3"
+  }
+}

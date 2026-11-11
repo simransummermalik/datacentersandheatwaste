@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="439.2pt" height="169.2pt" viewBox="0 0 439.2 169.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-10T19:26:31.402784</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 169.2 
+L 439.2 169.2 
+L 439.2 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 21.43296 37.49472 
+L 417.76704 37.49472 
+" clip-path="url(#p637eb41b48)" style="fill: none; stroke: #202020; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 21.43296 65.10816 
+L 417.76704 65.10816 
+" clip-path="url(#p637eb41b48)" style="fill: none; stroke: #202020; stroke-width: 0.55; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 21.43296 125.208 
+L 417.76704 125.208 
+" clip-path="url(#p637eb41b48)" style="fill: none; stroke: #202020; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 12.5px; font-family: 'Times New Roman'; text-anchor: start; fill: #202020" x="25.64928" y="22.87584" transform="rotate(-0 25.64928 22.87584)">90-day heating energy cost · 2.7 ha greenhouse</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Times New Roman'; text-anchor: start; fill: #202020" x="25.64928" y="55.36224" transform="rotate(-0 25.64928 55.36224)">Reference heater</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Times New Roman'; text-anchor: end; fill: #202020" x="291.27744" y="55.36224" transform="rotate(-0 291.27744 55.36224)">Heater alone</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Times New Roman'; text-anchor: end; fill: #202020" x="413.55072" y="55.36224" transform="rotate(-0 413.55072 55.36224)">Recovery + backup</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 11px; font-family: 'Times New Roman'; text-anchor: start; fill: #202020" x="25.64928" y="86.22432" transform="rotate(-0 25.64928 86.22432)">Electric resistance</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 11px; font-family: 'Times New Roman'; text-anchor: end; fill: #202020" x="291.27744" y="86.22432" transform="rotate(-0 291.27744 86.22432)">$477k</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 11px; font-family: 'Times New Roman'; text-anchor: end; fill: #202020" x="413.55072" y="86.22432" transform="rotate(-0 413.55072 86.22432)">$107k</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 11px; font-family: 'Times New Roman'; text-anchor: start; fill: #202020" x="25.64928" y="110.58912" transform="rotate(-0 25.64928 110.58912)">Gas boiler (85% efficient)</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 11px; font-family: 'Times New Roman'; text-anchor: end; fill: #202020" x="291.27744" y="110.58912" transform="rotate(-0 291.27744 110.58912)">$230k</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 11px; font-family: 'Times New Roman'; text-anchor: end; fill: #202020" x="413.55072" y="110.58912" transform="rotate(-0 413.55072 110.58912)">$100k</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman'; text-anchor: start; fill: #555555" x="25.64928" y="143.07552" transform="rotate(-0 25.64928 143.07552)">EIA NC 2025 averages; energy only. Excludes capital and heat purchase.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p637eb41b48">
+   <rect x="8.784" y="3.384" width="421.632" height="162.432"/>
+  </clipPath>
+ </defs>
+</svg>

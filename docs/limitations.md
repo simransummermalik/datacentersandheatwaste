@@ -13,8 +13,9 @@ are not a construction specification or an estimate of annual crop output.
   coolant flow and supply/return measurements, exchanger pinch temperatures,
   controls data, and a manufacturer performance map.
 - A low-temperature source may technically supply a heat pump while still being
-  economically or electrically unattractive. This repository does not price
-  electricity, carbon, backup cooling, water, piping, land, or maintenance.
+  economically or electrically unattractive. The winter screen prices energy
+  with statewide average retail rates; it does not price carbon, backup
+  cooling, water, piping, land, maintenance, or electricity demand charges.
 - The heat pump is allowed to add compressor electricity to the condenser heat.
   That output is not “free recovered heat”; compare it with the explicit
   electrical-input column.
@@ -26,6 +27,28 @@ are not a construction specification or an estimate of annual crop output.
   availability.
 - The storage example starts with a full idealized tank and uses a synthetic
   24-hour profile. It demonstrates time mismatch, not a seasonal-storage claim.
+
+## Limits of the hourly winter screen
+
+- The Charlotte temperature series is observed airport weather for one winter,
+  while the IT-power profile is measured at a Colorado HPC center. Their
+  alignment is a hypothetical cross-site scenario, not a paired measurement of
+  an AI data center and a greenhouse in Charlotte. Other compute-load traces
+  or winters can change reliability substantially.
+- The five missing weather hours are interpolated. Onsite greenhouse
+  temperature, wind, solar, and internal operating data are unavailable.
+- Fixed 35 °C coolant, 40 °C hydronic supply, 75% collection, and capped COP 6
+  are scenario assumptions. COP may change with ambient conditions, source
+  temperature, and partial load. The cost screen assumes modulation at the
+  modeled COP.
+- The 10.532 MWh winter tank begins empty. The 148.7 MWh zero-backup screen
+  allows unlimited charge/discharge power and a 20 °C water swing. Neither
+  number establishes tank footprint, cost, equipment selection, or resilience
+  to a longer or deeper outage.
+- No actual existing greenhouse heater or utility tariff was supplied. Gas
+  boiler and electric resistance are hypothetical equal-demand references.
+  The energy-only comparison excludes heat purchase, capital, demand charges,
+  fixed charges, and cooling savings. It is not a payback calculation.
 
 ## Conditions that make the idea stop making sense
 

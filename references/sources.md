@@ -10,7 +10,10 @@ The `source_id` values in the parameter CSV map to the numbered entries below:
 `LU_2024_HX` → 6, `NREL_5GDHC_2022` → 13,
 `CORNELL_NRAES_003` → 7, `USDA_VIRTUAL_GROWER_2010` → 9,
 `ALABAMA_EXTENSION_CROP_TEMPS` → 11, `NASA_AIR_PROPERTIES` → 12, and
-`ENERGYPLUS_PSYCHROMETRICS` → 12. `ASSUMPTION` means the value is a declared
+`ENERGYPLUS_PSYCHROMETRICS` → 12. Winter-analysis sources are
+`EIA_ELECTRICITY_2025` → 22, `EIA_GAS_2025` → 23,
+`EIA_GAS_CONTENT_2025` → 24, and `DOE_FEMP_BOILERS` → 25.
+`ASSUMPTION` means the value is a declared
 scenario choice rather than a measured fact.
 
 ## Data-center heat and temperature
@@ -89,3 +92,32 @@ scenario choice rather than a measured fact.
 19. USDA NRCS, [Best Practices for the Sustainable Urban Farm](https://www.nrcs.usda.gov/sites/default/files/2025-01/Best-Practices-for-the-Sustainable-Urban-Farm.pdf).
     Practical constraints including land tenure, zoning, cost, distribution, and
     communication with growers and food-justice organizations.
+
+## Hourly winter data and price benchmarks
+
+20. NOAA NCEI, [Global Hourly / Integrated Surface Database](https://www.ncei.noaa.gov/products/land-based-station/integrated-surface-database),
+    Charlotte Douglas station 72314013881. The [2024](https://noaa-global-hourly-pds.s3.amazonaws.com/2024/72314013881.csv)
+    and [2025](https://noaa-global-hourly-pds.s3.amazonaws.com/2025/72314013881.csv)
+    station CSVs supply observed temperature for the 2024–25 winter. Five of
+    2,160 hours are interpolated as documented in `data/weather/README.md`.
+21. Clark and Strelka, [NLR HPC Facility Power Usage Effectiveness (PUE)
+    Data](https://data.nlr.gov/submissions/300), DOI
+    [10.7799/3015212](https://doi.org/10.7799/3015212), CC BY 4.0. The measured
+    `it_power_kw` field supplies only a temporal proxy from an HPC facility in
+    Golden, Colorado. It is not AI-specific or colocated with Charlotte weather.
+22. U.S. Energy Information Administration, [Electric Power Annual Table 2.10,
+    Average Price of Electricity to Ultimate Customers by End-Use Sector, by
+    State](https://www.eia.gov/electricity/annual/table.php?t=epa_02_10.html).
+    North Carolina 2025 commercial annual average: 10.22 cents/kWh. This is a
+    benchmark, not a project tariff.
+23. EIA, [North Carolina price of natural gas sold to commercial
+    consumers](https://www.eia.gov/dnav/ng/hist/n3020nc3a.htm). The 2025
+    annual average is $12.71/Mcf.
+24. EIA, [Natural gas volume-to-energy
+    conversion](https://www.eia.gov/tools/faqs/faq.php?id=45&t=5). The 2025
+    national average heat content is about 1.037 MMBtu/Mcf; actual delivered gas
+    varies by supplier and location.
+25. U.S. DOE FEMP, [Purchasing Energy-Efficient
+    Boilers](https://www.energy.gov/cmei/femp/purchasing-energy-efficient-boilers).
+    Boiler-efficiency context for the 85% gas-reference scenario. The model has
+    no actual greenhouse boiler efficiency measurement.

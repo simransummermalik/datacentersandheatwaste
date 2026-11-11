@@ -148,6 +148,42 @@ storage; it is a way to make the timing problem visible.
 
 Generated tables and plots live in [`results/`](results/) and [`figures/`](figures/).
 
+### Observed-weather winter reliability screen
+
+The next calculation fixes a **2.70 ha greenhouse** and tests every hour of the
+December 2024–February 2025 Charlotte winter using [NOAA outdoor
+temperature](data/weather/README.md). Its IT-load *shape* is from a measured
+[Colorado HPC data center](data/load_profiles/README.md), scaled to a
+hypothetical 10 MW Charlotte plant at 80% mean load. This is a cross-site
+scenario, not a measurement of an AI data center in Charlotte.
+
+| Scenario | Heating hours without backup | Backup heat | Winter compressor electricity |
+|---|---:|---:|---:|
+| Measured-load proxy, no storage | 94.55% | 149.9 MWh | 818.7 MWh |
+| Measured-load proxy, 10.5 MWh storage | **96.54%** | **127.8 MWh** | **828.8 MWh** |
+| Constant 80% IT load, 10.5 MWh storage | 100% | 0 MWh | 852.0 MWh |
+
+Of 2,054 hours requiring heat, the measured-load case with storage covers
+1,983 without backup. Across all 2,160 winter hours, 2,089 (96.71%) require no
+backup. One 66-hour low-load interval causes 97.9% of its backup
+energy. A storage-only zero-backup screen for this one winter requires about
+148.7 MWh of usable heat capacity, approximately 6,414 m³ of water at a 20 °C
+swing. This is an idealized model result, not an equipment specification.
+
+For the same greenhouse demand, modeled **energy-only** winter cost is about
+**$107k** for recovered heat plus electric backup versus **$477k** for electric
+resistance alone. With a reference 85% gas boiler, the comparison is **$100k**
+for recovered heat plus gas backup versus **$230k** for gas heat alone. These
+use EIA 2025 North Carolina annual-average commercial prices; no actual
+greenhouse heater or utility bill was supplied. The comparison excludes
+equipment and piping costs, tariffs, and the price of recovered heat.
+
+Read the [full method, limitations, and source links](docs/winter_reliability.md).
+The plain [reliability](charts/04_winter_reliability.png), [cost](charts/05_winter_heating_cost.png),
+[storage](charts/06_storage_sizing.png), and [low-load episode](charts/07_low_compute_event.png)
+figures are ready for the poster; underlying hourly data and summary tables are
+in [`results/`](results/).
+
 ## Information and control
 
 The thermal calculation is only useful if a real system can observe its own
@@ -173,6 +209,8 @@ python -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
 python scripts/generate_results.py
+python scripts/prepare_charlotte_weather.py
+python scripts/run_winter_analysis.py
 python scripts/build_notebooks.py
 jupyter nbconvert --to notebook --execute --inplace \
   --ExecutePreprocessor.timeout=120 notebooks/01_baseline.ipynb \
